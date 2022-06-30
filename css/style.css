@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul, li, menu{
@@ -10,17 +11,20 @@ ul, li, menu{
 body{
     height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 main{
     padding: 200px 100px 60px 100px;
-    
+    position: relative;
+    flex-grow: 1;
 }
 
 /* 100vh flex col */
 /* flex grow per prendere tutto lo spazio */
 
-.facecam{
+.speaker{
     position: relative;
 }
 .user{
@@ -39,4 +43,60 @@ main{
     row-gap: 20px;
     column-gap: 5px;
     justify-content: center;
+}
+
+.view{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.view__item{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 8px;
+}
+
+/* footer */
+footer{
+    background-color: #222222;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.select-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.button{
+    padding: 10px;
+    color: darkred;
+    font-weight: 700;
+    background-color: grey;
+}
+.col:first-child i{
+    font-size: 25px;
 }
