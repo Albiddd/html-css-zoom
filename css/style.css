@@ -16,7 +16,7 @@ body{
 }
 
 main{
-    padding: 80px 80px 30px 80px;
+    padding: 60px 60px 30px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@ main{
 .user{
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 14px;
+    font-size: clamp(5px, 1vw, 14px);
     position: absolute;
     bottom: 0;
     left: 0;
