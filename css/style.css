@@ -63,7 +63,7 @@ main{
 /* footer */
 footer{
     background-color: #222222;
-    padding: 10px;
+    /* padding: 15px; */
 }
 
 .container{
@@ -71,6 +71,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding-left: 10px;
 }
 
 .container ul{
@@ -92,11 +93,25 @@ footer{
     gap: 5px;
 }
 .button{
-    padding: 10px;
+    padding: 30px 10px;
     color: darkred;
     font-weight: 700;
     background-color: grey;
 }
 .col:first-child i{
     font-size: 25px;
+}
+.fa-share-from-square{
+    color: #4BC800;
+}
+
+.button:hover{
+    color: white;
+    background-color: darkred;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.container li:hover{
+    cursor: pointer;
 }
